@@ -179,12 +179,12 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Softwares}
+  \frametitle{Cluster + Buster}
   \begin{itemize}
-    \item CentOS 7 Linux distribution
+    \item CentOS 7
     \item Intel MPI and ParTec MPI
-    \item OpenMP
-    \item ...
+    \item InfiniBand EDR
+    \item 1,345.28 kW
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
@@ -195,20 +195,16 @@
 
 \begin{frame}
   \frametitle{Flynn}
-  Based on the instruction stream and the data stream.
-
   \begin{itemize}
-    \item SISD
-    \item SIMD
-    \item MISD
-    \item \textbf{MIMD}
+    \item SISD - Single Instruction, Single Data
+    \item SIMD - Single Instruction, Multiple Data
+    \item MISD - Multiple Instruction, Single Data
+    \item \textbf{MIMD - Multiple Instruction, Multiple Data}
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Memory sharing}
-  They use MPI to communicate between nodes.
-
   \begin{itemize}
     \item Multiprocessor
     \item \textbf{Multicomputer}
@@ -220,24 +216,27 @@
 \begin{frame}
   \frametitle{Type of memory access}
   \begin{itemize}
-    \item UMA
-    \item NUMA
-    \item COMA
-    \item \textbf{NORMA}
+    \item UMA - Uniform Memory Access
+    \item NUMA - Non-Uniform Memory Access
+    \item COMA - Cache-Only Memory Architecture
+    \item \textbf{NORMA - Non-Remote Memory Access}
   \end{itemize}
+
+  % https://github.com/claudioscheer/master-degree/blob/master/parallel-architectures/class-4/annotations.md#academy
 \end{frame}
 
 \begin{frame}
   \frametitle{Construction trends}
   \begin{itemize}
-    \item PVP
-    \item SMP
-    \item MPP
-    \item NOW
-    \item \textbf{COW}
+    \item PVP - Parallel Vector Processors
+    \item SMP - Symmetric Multiprocessors
+    \item MPP - Massively Parallel Processors
+    \item NOW - Network Of Workstations
+    \item \textbf{COW - Clusters Of Workstations}
   \end{itemize}
 
   % https://youtu.be/dsFCeEW0qxU
+  % https://github.com/claudioscheer/master-degree/blob/master/parallel-architectures/class-5/annotations.md#annotations
 \end{frame}
 
 \begin{frame}
@@ -245,7 +244,73 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Flynn}
+  \frametitle{Dongarra et al. (2003)}
+
+  \begin{columns}
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Clustering;
+            \begin{itemize}
+              \item \textbf{c - commodity cluster}
+              \item m - monolithic system
+            \end{itemize}
+    \end{itemize}
+
+    \begin{itemize}
+      \item Parallelism;
+            \begin{itemize}
+              \item t - multithreading
+              \item v - vector
+              \item c - communicating sequential processes or message passing
+              \item s - systolic
+              \item w - VLIW
+              \item h - producer/consumer
+              \item p - parallel processes
+            \end{itemize}
+    \end{itemize}
+
+    \column{0.5\textwidth}
+    \begin{itemize}
+      \item Naming;
+            \begin{itemize}
+              \item \textbf{d - distributed}
+              \item s - shared
+              \item \textbf{c - cache coherent}
+            \end{itemize}
+    \end{itemize}
+
+    \begin{itemize}
+      \item Latency;
+            \begin{itemize}
+              \item c - caches
+              \item v - vectors
+              \item t - multithreaded
+              \item m - processor in memory
+              \item p - parcel or message driven split-transaction
+              \item f - prefetching
+              \item a - explicit allocation
+            \end{itemize}
+    \end{itemize}
+  \end{columns}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Eric E. Johnson (1988)}
+  \begin{itemize}
+    \item GMSV - Global Memory-Shared Variables
+          \begin{itemize}
+            \item Shared memory;
+          \end{itemize}
+    \item \textbf{DMMP - Distributed Memory-Message Passing}
+          \begin{itemize}
+            \item Message passing;
+          \end{itemize}
+    \item DMSV - Distributed Memory-Shared Variables
+          \begin{itemize}
+            \item Hybrid;
+          \end{itemize}
+    \item GMMP - Global Memory-Message Passing
+  \end{itemize}
 \end{frame}
 %---------------------------------------------------------
 
@@ -256,8 +321,8 @@
 \begin{frame}
   \frametitle{Other resources}
   \begin{itemize}
-    \item \href{https://www.youtube.com/watch?v=7h6mYU2HDTA}{Time lapse video of the installation}
-    \item \href{https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html}{Jülich Supercomputing Centre}
+    \item \href{https://www.youtube.com/watch?v=7h6mYU2HDTA}{Time lapse video of the installation};
+    \item \href{https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html}{Jülich Supercomputing Centre};
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
