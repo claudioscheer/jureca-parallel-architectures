@@ -179,12 +179,12 @@
 \end{frame}
 
 \begin{frame}
-  \frametitle{Software}
+  \frametitle{Softwares}
   \begin{itemize}
-    \item 1872 compute nodes
-    \item 12 visualization nodes
-    \item 45.216 CPU cores
-    \item 1.8 (CPU) + 0.44 (GPU) Petaflop per second
+    \item CentOS 7 Linux distribution
+    \item Intel MPI and ParTec MPI
+    \item OpenMP
+    \item ...
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
@@ -194,15 +194,58 @@
 \section{Classifications}
 
 \begin{frame}
-  \frametitle{Sample frame title}
-  This is a text in second frame. For the sake of showing an example.
+  \frametitle{Flynn}
+  Based on the instruction stream and the data stream.
 
   \begin{itemize}
-    \item<1-> Text visible on slide 1
-    \item<2-> Text visible on slide 2
-    \item<3> Text visible on slides 3
-    \item<4-> Text visible on slide 4
+    \item SISD
+    \item SIMD
+    \item MISD
+    \item \textbf{MIMD}
   \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Memory sharing}
+  They use MPI to communicate between nodes.
+
+  \begin{itemize}
+    \item Multiprocessor
+    \item \textbf{Multicomputer}
+  \end{itemize}
+
+  % https://youtu.be/LeBRG7dRZ08?t=4860
+\end{frame}
+
+\begin{frame}
+  \frametitle{Type of memory access}
+  \begin{itemize}
+    \item UMA
+    \item NUMA
+    \item COMA
+    \item \textbf{NORMA}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Construction trends}
+  \begin{itemize}
+    \item PVP
+    \item SMP
+    \item MPP
+    \item NOW
+    \item \textbf{COW}
+  \end{itemize}
+
+  % https://youtu.be/dsFCeEW0qxU
+\end{frame}
+
+\begin{frame}
+  \includegraphics[width=\textwidth]{./images/classifications.png}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Flynn}
 \end{frame}
 %---------------------------------------------------------
 
