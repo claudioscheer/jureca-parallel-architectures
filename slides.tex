@@ -102,85 +102,97 @@
 
 \begin{frame}
   \frametitle{JURECA Cluster}
-  \begin{columns}[T]
-    \begin{column}{.5\textwidth}
-      \begin{itemize}
-        \item Dual-socket Intel Xeon E5-2680 v3 Haswell
-        \item NVIDIA K40 and K80 GPUs
-        \item 128/256/512 GiB memory per node (DDR4 @ 2133 MHz)
-        \item 1884 compute nodes $\to$ 45.216 cores
-        \item InfiniBand EDR (100 Gbps per link and direction)
-      \end{itemize}
-    \end{column}
-    \begin{column}{.5\textwidth}
-      \includegraphics[width=\textwidth]{./images/jureca-cluster.jpeg}
-    \end{column}
-  \end{columns}
+  \includegraphics[width=\textwidth]{./images/jureca-cluster.jpeg}
+\end{frame}
+
+\begin{frame}
+  \frametitle{JURECA Cluster}
+  \begin{itemize}
+    \item 1872 compute nodes\footnote{You can see the details \href{https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/Configuration/Configuration_node.html}{here}.}
+          \begin{itemize}
+            \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node
+                  \begin{itemize}
+                    \item 2 x 12 cores, 2.5 GHz
+                  \end{itemize}
+            \item 75 compute nodes with 2 NVIDIA K80 GPUs
+                  \begin{itemize}
+                    \item 2 x 4992 CUDA cores
+                    \item 2 x 24 GiB GDDR5 memory
+                  \end{itemize}
+            \item DDR4 memory (2133 MHz)
+                  \begin{itemize}
+                    \item 1605 compute nodes with 128 GiB memory
+                    \item 128 compute nodes with 256 GiB memory
+                    \item 64 compute nodes with 512 GiB memory
+                  \end{itemize}
+          \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{JURECA Cluster}
+  \begin{itemize}
+    \item 12 visualization nodes
+          \begin{itemize}
+            \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node
+            \item 2 NVIDIA K40 GPUs per node
+                  \begin{itemize}
+                    \item 2 x 12 GiB GDDR5 memory
+                  \end{itemize}
+            \item 10 nodes with 512 GiB memory
+            \item 2 nodes with 1024 GiB memory
+          \end{itemize}
+  \end{itemize}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Summary - JURECA Cluster}
+  \begin{itemize}
+    \item 1872 compute nodes
+    \item 12 visualization nodes
+    \item 45.216 CPU cores
+    \item 1.8 (CPU) + 0.44 (GPU) Petaflop per second
+    \item 100 GiB per second storage connection
+  \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{JURECA Buster}
-  \begin{columns}[T]
-    \begin{column}{.5\textwidth}
-      \begin{itemize}
-        \item asdaf
-      \end{itemize}
-    \end{column}
-    \begin{column}{.5\textwidth}
-      \includegraphics[width=\textwidth]{./images/jureca-buster.jpeg}
-    \end{column}
-  \end{columns}
+  \includegraphics[width=\textwidth]{./images/jureca-buster.jpeg}
 \end{frame}
 
 \begin{frame}
-  \frametitle{Sample frame title}
-
-  In this slide, some important text will be
-  \alert{highlighted} because it's important.
-  Please, don't abuse it.
-
-  \begin{block}{Remark}
-    Sample text
-  \end{block}
-
-  \begin{alertblock}{Important theorem}
-    Sample text in red box
-  \end{alertblock}
-
-  \begin{examples}
-    Sample text in green box. The title of the block is ``Examples".
-  \end{examples}
+  \frametitle{Summary - JURECA Buster}
+  \begin{itemize}
+    \item 1640 compute nodes\footnote{You can see the details \href{https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/Configuration/Configuration_node.html}{here}.}
+          \begin{itemize}
+            \item 1 Intel Xeon Phi 7250-F Knights Landing CPUs per node
+                  \begin{itemize}
+                    \item 68 cores, 1.4 GHz
+                    \item 96 GiB memory plus 16 GiB MCDRAM high-bandwidth memory
+                  \end{itemize}
+          \end{itemize}
+    \item 111.520 CPU cores
+    \item 5 Petaflop per second
+    \item 100+ GiB per second storage connection
+  \end{itemize}
 \end{frame}
-%---------------------------------------------------------
 
-
-%---------------------------------------------------------
-%Two columns
 \begin{frame}
-  \frametitle{Two-column slide}
-
-  \begin{columns}
-
-    \column{0.5\textwidth}
-    This is a text in first column.
-    $$E=mc^2$$
-    \begin{itemize}
-      \item First item
-      \item Second item
-    \end{itemize}
-
-    \column{0.5\textwidth}
-    This text will be in the second column
-    and on a second tought this is a nice looking
-    layout in some cases.
-  \end{columns}
+  \frametitle{Software}
+  \begin{itemize}
+    \item 1872 compute nodes
+    \item 12 visualization nodes
+    \item 45.216 CPU cores
+    \item 1.8 (CPU) + 0.44 (GPU) Petaflop per second
+  \end{itemize}
 \end{frame}
 %---------------------------------------------------------
 
+
+%---------------------------------------------------------
 \section{Classifications}
 
-%---------------------------------------------------------
-%Changing visivility of the text
 \begin{frame}
   \frametitle{Sample frame title}
   This is a text in second frame. For the sake of showing an example.
@@ -192,22 +204,19 @@
     \item<4-> Text visible on slide 4
   \end{itemize}
 \end{frame}
-
 %---------------------------------------------------------
 
 
+%---------------------------------------------------------
 \section{Other resources}
 
-%---------------------------------------------------------
 \begin{frame}
   \frametitle{Other resources}
-
   \begin{itemize}
     \item \href{https://www.youtube.com/watch?v=7h6mYU2HDTA}{Time lapse video of the installation}
     \item \href{https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html}{Jülich Supercomputing Centre}
   \end{itemize}
 \end{frame}
-
 %---------------------------------------------------------
 
 \end{document}
