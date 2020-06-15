@@ -10,8 +10,7 @@
 %------------------------------------------------------------
 \title[JURECA]
 {JURECA}
-
-\subtitle{First modular supercomputer worldwide}
+\subtitle{First Modular Supercomputer Worldwide}
 
 \author[Claudio Scheer]
 {Claudio~Scheer\inst{1}}
@@ -52,10 +51,10 @@
 
 
 %---------------------------------------------------------
-\section{Curiosities}
+\section{Overview}
 
 \begin{frame}
-  \frametitle{Organization}
+  \frametitle{Research centre}
 
   \begin{itemize}
     \item Forschungszentrum Jülich is a interdisciplinary research centre in Germany;
@@ -108,22 +107,22 @@
 \begin{frame}
   \frametitle{JURECA Cluster}
   \begin{itemize}
-    \item 1872 compute nodes\footnote{You can see the details \href{https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/Configuration/Configuration_node.html}{here}.}
+    \item 1872 compute nodes\footnote{You can see the details \href{https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/Configuration/Configuration_node.html}{here}.};
           \begin{itemize}
-            \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node
+            \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node;
                   \begin{itemize}
-                    \item 2 x 12 cores, 2.5 GHz
+                    \item 2 x 12 cores, 2.5 GHz;
                   \end{itemize}
-            \item 75 compute nodes with 2 NVIDIA K80 GPUs
+            \item 75 compute nodes with 2 NVIDIA K80 GPUs;
                   \begin{itemize}
-                    \item 2 x 4992 CUDA cores
-                    \item 2 x 24 GiB GDDR5 memory
+                    \item 2 x 4992 CUDA cores;
+                    \item 2 x 24 GiB GDDR5 memory;
                   \end{itemize}
-            \item DDR4 memory (2133 MHz)
+            \item DDR4 memory (2133 MHz);
                   \begin{itemize}
-                    \item 1605 compute nodes with 128 GiB memory
-                    \item 128 compute nodes with 256 GiB memory
-                    \item 64 compute nodes with 512 GiB memory
+                    \item 1605 compute nodes with 128 GiB memory;
+                    \item 128 compute nodes with 256 GiB memory;
+                    \item 64 compute nodes with 512 GiB memory;
                   \end{itemize}
           \end{itemize}
   \end{itemize}
@@ -132,15 +131,15 @@
 \begin{frame}
   \frametitle{JURECA Cluster}
   \begin{itemize}
-    \item 12 visualization nodes
+    \item 12 visualization nodes;
           \begin{itemize}
-            \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node
-            \item 2 NVIDIA K40 GPUs per node
+            \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node;
+            \item 2 NVIDIA K40 GPUs per node;
                   \begin{itemize}
-                    \item 2 x 12 GiB GDDR5 memory
+                    \item 2 x 12 GiB GDDR5 memory;
                   \end{itemize}
-            \item 10 nodes with 512 GiB memory
-            \item 2 nodes with 1024 GiB memory
+            \item 10 nodes with 512 GiB memory;
+            \item 2 nodes with 1024 GiB memory;
           \end{itemize}
   \end{itemize}
 \end{frame}
@@ -148,11 +147,11 @@
 \begin{frame}
   \frametitle{Summary - JURECA Cluster}
   \begin{itemize}
-    \item 1872 compute nodes
-    \item 12 visualization nodes
-    \item 45.216 CPU cores
-    \item 1.8 (CPU) + 0.44 (GPU) Petaflop per second
-    \item 100 GiB per second storage connection
+    \item 1872 compute nodes;
+    \item 12 visualization nodes;
+    \item 45.216 CPU cores;
+    \item 1.8 (CPU) + 0.44 (GPU) Petaflop per second;
+    \item 100 GiB per second storage connection;
   \end{itemize}
 \end{frame}
 
@@ -164,27 +163,27 @@
 \begin{frame}
   \frametitle{Summary - JURECA Buster}
   \begin{itemize}
-    \item 1640 compute nodes\footnote{You can see the details \href{https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/Configuration/Configuration_node.html}{here}.}
+    \item 1640 compute nodes\footnote{You can see the details \href{https://www.fz-juelich.de/ias/jsc/EN/Expertise/Supercomputers/JURECA/Configuration/Configuration_node.html}{here}.};
           \begin{itemize}
-            \item 1 Intel Xeon Phi 7250-F Knights Landing CPUs per node
+            \item 1 Intel Xeon Phi 7250-F Knights Landing CPUs per node;
                   \begin{itemize}
-                    \item 68 cores, 1.4 GHz
-                    \item 96 GiB memory plus 16 GiB MCDRAM high-bandwidth memory
+                    \item 68 cores, 1.4 GHz;
+                    \item 96 GiB memory plus 16 GiB MCDRAM high-bandwidth memory;
                   \end{itemize}
           \end{itemize}
-    \item 111.520 CPU cores
-    \item 5 Petaflop per second
-    \item 100+ GiB per second storage connection
+    \item 111.520 CPU cores;
+    \item 5 Petaflop per second;
+    \item 100+ GiB per second storage connection;
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Cluster + Buster}
   \begin{itemize}
-    \item CentOS 7
-    \item Intel MPI and ParTec MPI
-    \item InfiniBand EDR
-    \item 1,345.28 kW
+    \item CentOS 7;
+    \item Intel MPI and ParTec MPI;
+    \item InfiniBand EDR;
+    \item 1,345.28 kW;
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
@@ -196,18 +195,18 @@
 \begin{frame}
   \frametitle{Flynn}
   \begin{itemize}
-    \item SISD - Single Instruction, Single Data
-    \item SIMD - Single Instruction, Multiple Data
-    \item MISD - Multiple Instruction, Single Data
-    \item \textbf{MIMD - Multiple Instruction, Multiple Data}
+    \item SISD - Single Instruction, Single Data;
+    \item SIMD - Single Instruction, Multiple Data;
+    \item MISD - Multiple Instruction, Single Data;
+    \item \textbf{MIMD - Multiple Instruction, Multiple Data;}
   \end{itemize}
 \end{frame}
 
 \begin{frame}
   \frametitle{Memory sharing}
   \begin{itemize}
-    \item Multiprocessor
-    \item \textbf{Multicomputer}
+    \item Multiprocessor;
+    \item \textbf{Multicomputer;}
   \end{itemize}
 
   % https://youtu.be/LeBRG7dRZ08?t=4860
@@ -216,10 +215,10 @@
 \begin{frame}
   \frametitle{Type of memory access}
   \begin{itemize}
-    \item UMA - Uniform Memory Access
-    \item NUMA - Non-Uniform Memory Access
-    \item COMA - Cache-Only Memory Architecture
-    \item \textbf{NORMA - Non-Remote Memory Access}
+    \item UMA - Uniform Memory Access;
+    \item NUMA - Non-Uniform Memory Access;
+    \item COMA - Cache-Only Memory Architecture;
+    \item \textbf{NORMA - Non-Remote Memory Access;}
   \end{itemize}
 
   % https://github.com/claudioscheer/master-degree/blob/master/parallel-architectures/class-4/annotations.md#academy
@@ -228,11 +227,11 @@
 \begin{frame}
   \frametitle{Construction trends}
   \begin{itemize}
-    \item PVP - Parallel Vector Processors
-    \item SMP - Symmetric Multiprocessors
-    \item MPP - Massively Parallel Processors
-    \item NOW - Network Of Workstations
-    \item \textbf{COW - Clusters Of Workstations}
+    \item PVP - Parallel Vector Processors;
+    \item SMP - Symmetric Multiprocessors;
+    \item MPP - Massively Parallel Processors;
+    \item NOW - Network Of Workstations;
+    \item \textbf{COW - Clusters Of Workstations;}
   \end{itemize}
 
   % https://youtu.be/dsFCeEW0qxU
@@ -251,21 +250,21 @@
     \begin{itemize}
       \item Clustering;
             \begin{itemize}
-              \item \textbf{c - commodity cluster}
-              \item m - monolithic system
+              \item \textbf{c - commodity cluster;}
+              \item m - monolithic system;
             \end{itemize}
     \end{itemize}
 
     \begin{itemize}
       \item Parallelism;
             \begin{itemize}
-              \item t - multithreading
-              \item v - vector
-              \item c - communicating sequential processes or message passing
-              \item s - systolic
-              \item w - VLIW
-              \item h - producer/consumer
-              \item p - parallel processes
+              \item \textbf{t - multithreading;}
+              \item v - vector;
+              \item c - communicating sequential processes or message passing;
+              \item s - systolic;
+              \item w - VLIW;
+              \item h - producer/consumer;
+              \item p - parallel processes;
             \end{itemize}
     \end{itemize}
 
@@ -273,43 +272,46 @@
     \begin{itemize}
       \item Naming;
             \begin{itemize}
-              \item \textbf{d - distributed}
-              \item s - shared
-              \item \textbf{c - cache coherent}
+              \item d - distributed;
+              \item s - shared;
+              \item \textbf{c - cache coherent;}
             \end{itemize}
     \end{itemize}
 
     \begin{itemize}
       \item Latency;
             \begin{itemize}
-              \item c - caches
-              \item v - vectors
-              \item t - multithreaded
-              \item m - processor in memory
-              \item p - parcel or message driven split-transaction
-              \item f - prefetching
-              \item a - explicit allocation
+              \item c - caches;
+              \item v - vectors;
+              \item t - multithreaded;
+              \item m - processor in memory;
+              \item \textbf{p - parcel or message driven split-transaction;}
+              \item f - prefetching;
+              \item a - explicit allocation;
             \end{itemize}
     \end{itemize}
   \end{columns}
+  \bigbreak
+  \bigbreak
+  Final classification: c/c/t/p.
 \end{frame}
 
 \begin{frame}
   \frametitle{Eric E. Johnson (1988)}
   \begin{itemize}
-    \item GMSV - Global Memory-Shared Variables
+    \item GMSV - Global Memory-Shared Variables;
           \begin{itemize}
             \item Shared memory;
           \end{itemize}
-    \item \textbf{DMMP - Distributed Memory-Message Passing}
+    \item \textbf{DMMP - Distributed Memory-Message Passing;}
           \begin{itemize}
             \item Message passing;
           \end{itemize}
-    \item DMSV - Distributed Memory-Shared Variables
+    \item DMSV - Distributed Memory-Shared Variables;
           \begin{itemize}
             \item Hybrid;
           \end{itemize}
-    \item GMMP - Global Memory-Message Passing
+    \item GMMP - Global Memory-Message Passing;
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
@@ -319,10 +321,10 @@
 \section{Other resources}
 
 \begin{frame}
-  \frametitle{Other resources}
   \begin{itemize}
-    \item \href{https://www.youtube.com/watch?v=7h6mYU2HDTA}{Time lapse video of the installation};
     \item \href{https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html}{Jülich Supercomputing Centre};
+    \item \href{https://www.youtube.com/watch?v=7h6mYU2HDTA}{Time lapse video of cluster installation};
+    \item \href{https://www.youtube.com/watch?v=S84vRFSc-vM}{Time lapse video of booster installation};
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
