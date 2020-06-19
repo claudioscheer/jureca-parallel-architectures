@@ -69,7 +69,6 @@
 \begin{frame}
   \frametitle{Managed supercomputers}
   \begin{itemize}
-    \item JUSUF;
     \item JUWELS (position 31\footnote{November 2019 ranking.});
           \begin{itemize}
             \item Helped Google demonstrate the quantum supremacy~\href{https://www.fz-juelich.de/SharedDocs/Pressemitteilungen/UK/EN/2019/2019-10-23-quantum-Supremacy.html}{(source)};
@@ -168,7 +167,7 @@
             \item 1 Intel Xeon Phi 7250-F Knights Landing CPUs per node;
                   \begin{itemize}
                     \item 68 cores, 1.4 GHz;
-                    \item 96 GiB memory plus 16 GiB MCDRAM high-bandwidth memory;
+                    \item 96 GiB RAM memory;
                   \end{itemize}
           \end{itemize}
     \item 111.520 CPU cores;
@@ -180,10 +179,18 @@
 \begin{frame}
   \frametitle{Cluster + Buster}
   \begin{itemize}
+    \item 6.8 Petaflop per second;
+    \begin{itemize}
+      \item Rmax: 3.8 Petaflop per second;
+    \end{itemize}
     \item CentOS 7;
-    \item Intel MPI and ParTec MPI;
+    \item MPI;
     \item InfiniBand EDR;
     \item 1,345.28 kW;
+    \begin{itemize}
+      \item There are better supercomputers with less consumption;
+    \end{itemize}
+
   \end{itemize}
 \end{frame}
 %---------------------------------------------------------
@@ -281,11 +288,11 @@
     \begin{itemize}
       \item Latency;
             \begin{itemize}
-              \item c - caches;
+              \item \textbf{c - caches;}
               \item v - vectors;
               \item t - multithreaded;
               \item m - processor in memory;
-              \item \textbf{p - parcel or message driven split-transaction;}
+              \item p - parcel or message driven split-transaction;
               \item f - prefetching;
               \item a - explicit allocation;
             \end{itemize}
@@ -293,7 +300,7 @@
   \end{columns}
   \bigbreak
   \bigbreak
-  Final classification: c/d/c/p.
+  Final classification: c/d/c/c.
 \end{frame}
 
 \begin{frame}
