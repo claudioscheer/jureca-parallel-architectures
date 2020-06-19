@@ -115,8 +115,8 @@
                   \end{itemize}
             \item 75 compute nodes with 2 NVIDIA K80 GPUs;
                   \begin{itemize}
-                    \item 2 x 4992 CUDA cores;
-                    \item 2 x 24 GiB GDDR5 memory;
+                    \item 4992 CUDA cores;
+                    \item 24 GiB GDDR5 memory;
                   \end{itemize}
             \item DDR4 memory (2133 MHz);
                   \begin{itemize}
@@ -136,7 +136,7 @@
             \item 2 Intel Xeon E5-2680 v3 Haswell CPUs per node;
             \item 2 NVIDIA K40 GPUs per node;
                   \begin{itemize}
-                    \item 2 x 12 GiB GDDR5 memory;
+                    \item 12 GiB GDDR5 memory;
                   \end{itemize}
             \item 10 nodes with 512 GiB memory;
             \item 2 nodes with 1024 GiB memory;
@@ -258,9 +258,9 @@
     \begin{itemize}
       \item Parallelism;
             \begin{itemize}
-              \item \textbf{t - multithreading;}
+              \item t - multithreading;
               \item v - vector;
-              \item c - communicating sequential processes or message passing;
+              \item \textbf{c - communicating sequential processes or message passing;}
               \item s - systolic;
               \item w - VLIW;
               \item h - producer/consumer;
@@ -272,9 +272,9 @@
     \begin{itemize}
       \item Naming;
             \begin{itemize}
-              \item d - distributed;
+              \item \textbf{d - distributed;}
               \item s - shared;
-              \item \textbf{c - cache coherent;}
+              \item c - cache coherent;
             \end{itemize}
     \end{itemize}
 
@@ -293,7 +293,7 @@
   \end{columns}
   \bigbreak
   \bigbreak
-  Final classification: c/c/t/p.
+  Final classification: c/d/c/p.
 \end{frame}
 
 \begin{frame}
@@ -318,9 +318,10 @@
 
 
 %---------------------------------------------------------
-\section{Other resources}
+\section{References and resources}
 
 \begin{frame}
+  \frametitle{References and resources}
   \begin{itemize}
     \item \href{https://www.fz-juelich.de/ias/jsc/EN/Home/home_node.html}{Jülich Supercomputing Centre};
     \item \href{https://www.youtube.com/watch?v=7h6mYU2HDTA}{Time lapse video of cluster installation};
